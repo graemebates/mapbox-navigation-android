@@ -25,7 +25,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".activity.NavigationActivity"
+            android:name=".activity.MockNavigationActivity"
             android:label="@string/title_navigation">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
