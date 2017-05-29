@@ -232,7 +232,7 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
   @Override
   public void userOffRoute(Location location) {
     Position newOrigin = Position.fromCoordinates(location.getLongitude(), location.getLatitude());
-    navigation.getRoute(newOrigin, destination, location.getBearing(), new Callback<DirectionsResponse>() {
+    navigation.getRoute(newOrigin, destination, new Callback<DirectionsResponse>() {
       @Override
       public void onResponse(Call<DirectionsResponse> call, Response<DirectionsResponse> response) {
         DirectionsRoute route = response.body().getRoutes().get(0);
